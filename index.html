@@ -1,87 +1,134 @@
-<!-- Este é um comentário em html. -->
-<!DOCTYPE HTML> <!-- Este é o DTD do HTML5. -->
-<!-- Document Type Definition é a instrução que vai orientar o 
-	\browser a carregar o conjunto correto de bibliotecas da versão do HTML em questão. -->
+<!DOCTYPE html>
 
 <html lang="pt-br">
-	<!-- primeiro filho do html = head. -->
-	<head>
-		<!-- Os filhos do head são em sua maioria tags de metadados. 
-			\Ex: meta. -->
-		<meta charset="UTF-8"/>
-		<meta name="viewport" content="width:device-width,initial-scale=1.0"/>
-		<title>Pagina Básica</title>
-	<head>
-	<!-- segundo filho do html = body -->
-	<body>
-	<div class="container">
-		<header class="cabecalho">
-			<h1 style="text-align: center;border: solid 2px #ff004c;">Minha Página</h1>
-		<nav class="menu">
-			
-			<ul>
-			 <li><a href="./paginas/help.html"> Help </a></li>
-			 <li><a href="#contact"> Contact </a></li>
-			 <li><a href="./paginas/about.html">About</a></li>
-			</ul>
+  <head>
+    <!-- As metatags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width:device-width, initial-scale=1.0" />
+    <title>Página Básica</title>
 
-		</nav>
-			
-		</header>
-		<section class="conteudo">
-			<div>
-				<h2>HELP</h2>
-				<p>help - Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae doloribus eius libero a, eaque veniam vel fugit eligendi in vero exercitationem tempore consectetur, ipsum adipisci, accusamus dicta esse voluptates corrupti. Itaque rem eveniet quasi laborum eum corporis in facilis dolore quidem sint placeat voluptatibus culpa, numquam tenetur, pariatur, quos natus at est eos doloremque? Voluptatem soluta modi cum quae odio nostrum? Quia dolorum, vitae laudantium molestiae harum distinctio dolores reiciendis illo inventore nisi esse architecto est blanditiis placeat beatae libero, corporis quos quisquam temporibus dicta. Nesciunt quaerat eius sapiente iusto voluptates incidunt molestiae, illum praesentium quidem voluptatem quam maxime at.
-				</p>
-				<a href="./paginas/help.html">Mais...</a>
-			</div>
-			<div>
-				<h2>ABOUT</h2>
-				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur libero numquam, adipisci iure nisi doloribus ea fuga tempora, velit, aliquid corporis dolorem cupiditate sit praesentium? Rerum vel corrupti sed laudantium cupiditate alias expedita commodi nisi accusamus, aperiam tenetur sunt ut labore sit quibusdam maiores architecto nemo illum fugiat provident, fuga quos. Sit blanditiis voluptatum eius veritatis consequatur, vero itaque enim illum omnis expedita eligendi temporibus corporis repellendus labore ad neque corrupti ullam autem officia numquam saepe perspiciatis voluptatibus. Temporibus modi repudiandae incidunt facere, nemo deleniti officia pariatur, dolorum sapiente unde asperiores sequi? Labore at illum dolorem aut? Impedit, quae quos.
-				</p>
-				<a href="./paginas/about.html">Mais...</a>
-			</div>
-			<div id="contact">
-				<h2>CONTACT</h2>
-				<form>
-					<fieldset>
-					  <legend>Customer Data</legend>
-					  <div>
-						<label for="idNm">Nome:</label>
-						<input
-						  type="text"
-						  name="txtNm"
-						  id="idNm"
-						  placeholder="Digite seu nome."
-						/>
-					  </div>
-					  <div>
-						<label for="idEmail">Email:</label>
-						<input
-						  type="email"
-						  name="txtEmail"
-						  id="idEmail"
-						  placeholder="Digite seu email."
-						/>
-					  </div>
-					  <div>
-						<button type="button">Send</button>
-							</div>
-					</fieldset>
-				</form>
-			</div>
-		</section>
-		<footer class="rodape">
-			<!-- nav.menu>ul>li*3>a[href="#"]{item - $} -->
-			<nav class="menu">
-				<ul>
-					<li><a href="https://www.fiap.com.br" target="_blank">FIAP</a></li>
-					<li><a href="https://www.google.com/" target="_blank">GOOGLE</a></li>
-					<li><a href="https://github.com/" target="_blank">GITHUB</a></li>
-				</ul>
-			</nav>
-		</footer>
-	</div>
+    <!-- As folhas de estilo  através de bloco style -->
 
-	</body>
-</html> 
+    <style>
+      h1 {
+        text-align: center;
+        border: solid 2px rgb(255, 0, 0);
+      }
+
+      .meu-h1 {
+        text-align: center;
+        border: solid 2px rgb(0, 0, 255);
+      }
+
+      #meu-h1-2 {
+        text-align: center;
+        border: solid 2px rgb(0, 255, 0);
+      }
+
+      section div h1 {
+        text-align: center;
+        border: solid 2px rgb(0, 255, 0);
+      }
+    </style>
+
+    <!-- As folhas de estilo  através de bloco style -->
+  </head>
+  <body>
+    <div class="container">
+      <header class="cabecalho">
+        <h1>Minha Página</h1>
+        <nav class="menu">
+          <!-- ul = unordered list e só pode conter dentro diretamente dentro de si  li (list item) ou outros uls-->
+          <ul>
+            <li><a href="./paginas/help.html"> Help </a></li>
+            <li><a href="./paginas/about.html"> About </a></li>
+            <li><a href="#contact"> Contact </a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="conteudo">
+        <div>
+          <h1>O LOKO</h1>
+          <h1>HELP</h1>
+          <p>
+            Help - Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Quibusdam officiis aspernatur odio magnam praesentium aliquid, eum
+            nam dolores possimus similique impedit quo ea quae exercitationem
+            sed maiores modi accusamus cupiditate illo ratione vero hic
+            voluptates quaerat. Est labore temporibus esse dolore eos. Quo
+            rerum, esse delectus, vel quasi provident veniam quam, beatae sequi
+            cum autem nam numquam quia et! Suscipit repellendus, non dolorem
+            error neque perspiciatis perferendis, illum saepe nulla, veniam ut
+            ab. Nam placeat veniam corrupti dolores ut qui repellat harum natus
+            dolore deleniti a dolor, consequatur incidunt modi vero iusto
+            laborum molestias aut! Debitis totam quod at quibusdam repellat,
+            obcaecati magnam nulla explicabo corporis, error, quos voluptates
+            voluptate ea inventore ipsa rerum quasi. Accusamus esse et aperiam
+            exercitationem laudantium, vitae harum dolore ad officia repellat
+            itaque. Quod eos necessitatibus error fugit atque magni eveniet
+            exercitationem ipsam, cum soluta ratione, saepe cumque asperiores
+            est. Minima vel doloribus numquam tempora blanditiis alias, vero
+            exercitationem voluptatum perspiciatis. Voluptates ut sapiente
+            ducimus nostrum distinctio nam fuga possimus praesentium sint,
+            suscipit veniam laudantium officia consequuntur dolor quibusdam
+            aliquid minus quo culpa, aperiam neque necessitatibus! Rem debitis
+            excepturi quis! Quibusdam officiis, nobis ullam harum a sunt id
+            neque maxime molestias qui delectus expedita est iusto veritatis
+            similique eius accusantium atque aut quisquam illum. Quaerat soluta
+            ipsa dolorum? Quisquam dolore voluptatibus laudantium vel excepturi,
+            consequuntur in, quasi libero, deleniti saepe similique nihil dicta
+            unde! Iusto ea architecto eum molestiae repellat, cumque odit magnam
+            ut, dicta alias exercitationem beatae quae similique minima rem eius
+            laborum illum consequuntur doloremque vero? Atque, aliquam officia
+            illo earum id nisi pariatur eligendi odit tempora voluptas placeat
+            dicta debitis, natus eum tenetur. Dolorum quos libero rerum fuga
+            minus eos obcaecati in odio sint deleniti voluptatem tenetur,
+            exercitationem veritatis, laboriosam explicabo cupiditate?
+          </p>
+          <a href="./paginas/about.html">Mais...</a>
+        </div>
+        <div id="contact">
+          <h2>CONTACT</h2>
+          <form>
+            <fieldset>
+              <legend>Customer Data</legend>
+              <div>
+                <label for="idNm">Nome:</label>
+                <input
+                  type="text"
+                  name="txtNm"
+                  id="idNm"
+                  placeholder="Digite seu nome."
+                />
+              </div>
+              <div>
+                <label for="idEmail">Email:</label>
+                <input
+                  type="email"
+                  name="txtEmail"
+                  id="idEmail"
+                  placeholder="Digite seu email."
+                />
+              </div>
+              <div>
+                <button type="button">Send</button>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </section>
+
+      <footer class="rodape">
+        <!-- nav.menu>ul>li*3>a[href="#"]{Item - $} -->
+        <nav class="menu">
+          <ul>
+            <li><a href="https://www.fiap.com.br" target="_blank">FIAP</a></li>
+            <li><a href="#">GOOGLE</a></li>
+            <li><a href="#">Github</a></li>
+          </ul>
+        </nav>
+      </footer>
+    </div>
+  </body>
+</html>
