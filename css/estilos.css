@@ -81,3 +81,9 @@ button {
   background-color: blue;
   color: white;
 }
+
+.rodape {
+  margin: 20px;
+  border-top: solid 2px;
+  border-color: red;
+}
