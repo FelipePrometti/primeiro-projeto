@@ -7,3 +7,7 @@ h1 {
 #cabecalho {
   background-color: blue;
 }
+
+nav {
+  font-weight: bold;
+}
