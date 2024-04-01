@@ -26,7 +26,7 @@ h2 {
 
 /* Class */
 .link {
-  color: #318021;
+  color: #000000;
 }
 
 ul .link {
@@ -86,4 +86,9 @@ button {
   margin: 20px;
   border-top: solid 2px;
   border-color: red;
+}
+
+/* Nesting links */
+a {
+  color: black;
 }

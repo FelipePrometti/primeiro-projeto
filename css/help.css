@@ -14,3 +14,7 @@ nav {
 #container {
   margin: 20px;
 }
+/* Nesting links */
+a {
+  color: black;
+}
