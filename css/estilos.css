@@ -66,3 +66,9 @@ nav {
 #conteudo {
   line-height: 1.5;
 }
+
+form {
+  border: solid 1px;
+  border-color: grey;
+  padding: 10px;
+}
