@@ -16,7 +16,12 @@
 
 /* Tag */
 h1 {
-  color: #d0ff00;
+  color: black;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+h2 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 /* Class */
@@ -25,15 +30,12 @@ h1 {
 }
 
 ul .link {
-  color: #e8240e;
-  /* border: 2px solid #e8240e; */
-  display: inline;
-  margin: 0 3%;
+  color: #000;
 
   /* Nesting links */
   a {
     text-decoration: none;
-    color: #e8240e;
+    color: black;
   }
 }
 
@@ -48,4 +50,8 @@ ul .link {
   height: 100%;
   border: 2px solid #000;
   margin: 0 auto;
+}
+
+#cabecalho {
+  background-color: blue;
 }
